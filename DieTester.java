@@ -8,7 +8,10 @@ public class DieTester {
         System.out.println("Die 1 = " + d1.getSide());
         System.out.println("Die 2 = " + d2.getSide());
 
+        di.locked();
         d1.roll();
+        d1.unlock();
+
         d2.roll();
 
         System.out.println("Die 1 = " + d1.getSide());
